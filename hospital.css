@@ -156,18 +156,17 @@ nav{
 
 /* Open Book Section */
 .openbook{
-    /* background-color: aquamarine; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-top: -100px;
-    /* padding: 0 60px; */
 }
 .openbook1{
     display: flex;
     height: 67vh;
     width: 1140px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 .openhours{
     width: 31%;
@@ -220,7 +219,7 @@ nav{
 }
 .bookapp{
     width: 69%;
-    background-color: var(--fifthcol);
+    background-color: var(--secondcol);
 }
 .bookapp1{
     display: flex;
@@ -240,13 +239,11 @@ nav{
     padding: 0;
     align-self: center;
 }
-.linee{
+.lineee{
     width: 120px;
-    background-image: url(/Assets/underline1.png);
-    /* background-position: center center; */
     background-size: cover;
     height: 21px;
-    margin-top: 20px;
+    margin-top: 15px;
     align-self: center;
 }
 .formm{
@@ -256,19 +253,24 @@ nav{
 }
 .formmmm{
     width: 42%;
-    background-color: #0091ff;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .formm1{
     width: 100%;
+    border-width: 1px;
+    border-color: #00000038;
+}
+.formm1[placeholder] {
+    color: #00000066;
+    padding-left: 10px;
 }
 .formmm{
     display: flex;
 }
 .formmicon{
-    background-color: #2d3840;
+    background-color: var(--firstcol);
     width: 60px;
     height: 50px;
     display: flex;
@@ -277,10 +279,271 @@ nav{
 }
 .formm2{
     width: 60%;
-    background-color: #2d3840;
 }
 .formm22{
     width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
+}
+#textareaa{
+    width: auto;
+    height: 29vh;
+    border-color: #00000038;
+}
+.textareabutton{
+    margin-top: 10px;
+    padding: 10px 50px;
+    color: var(--seventhcol);
+    font-family: var(--font1);
+    font-weight: 600;
+    background-color: var(--secondcol);
+    border: 2px solid var(--firstcol);
+}
+.formm22 div{
+    display: flex;
+    justify-content: right;
+}
+
+/* Department Section */
+.dept{
+    padding: 100px 0px 100px;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dept1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.dept1 h1{
+    color: var(--eightcol);
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 36px;
+}
+.deptgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 31.58% 31.58% 31.58%;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin-top: 120px;
+}
+.griditems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 40px 20px 40px;
+    position: relative;
+    border: 1px solid #00000038;
+}
+.gridbott{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridimage{
+    background-color: var(--firstcol);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.griditems h2{
+    color: var(--eightcol);
+    font-family: var(--font1);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.griditems p{
+    color: #666666;
+    font-family: var(--font1);
+    font-size: 14.5px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.71;
+}
+
+/* Our Doctors Section */
+.doctors{
+    background-image: url(/Assets/background2.png);
+}
+.doct{
+    padding: 80px 0px 150px;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.doct1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.doct1 h1{
+    color: var(--secondcol);
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 36px;
+}
+.docgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23.03% 23.03% 23.03% 23.03%;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin-top: 70px;
+}
+.docgrid3{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: var(--secondcol);
+}
+.docgrid3img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--eightcol);
+}
+.docgrid31{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.docgrid3 h3{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+.docgrid3 p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--firstcol);
+    margin: 0;
+}
+
+/* Our Services Section */
+.serv{
+    padding: 100px 0px 100px;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.serv1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.serv h1{
+    color: var(--eightcol);
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 36px;
+}
+.servgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 31.58% 31.58% 31.58%;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin-top: 120px;
+}
+.servgrid3{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: var(--eightcol);
+}
+.docgrid3img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--eightcol);
+}
+.docgrid31{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.servgrid3 h3{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+.sevgrid3 p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--firstcol);
+    margin: 0;
+}
+.griditemss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid #00000038;
+}
+.gridbott{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gridimage{
+    background-color: var(--firstcol);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.griditems h2{
+    color: var(--eightcol);
+    font-family: var(--font1);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.griditems p{
+    color: #666666;
+    font-family: var(--font1);
+    font-size: 14.5px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.71;
 }
